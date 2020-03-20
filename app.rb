@@ -6,7 +6,6 @@ class App < Sinatra::Base
     params[:name].reverse
   end
   get '/say/:number/:phrase' do 
-    params[:number]
-
+    (params[:number] ** 2.to_i).to_s
 
 end
